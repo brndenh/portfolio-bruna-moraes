@@ -1,0 +1,161 @@
+   * {
+       padding: 0;
+       margin: 0;
+       box-sizing: border-box;
+   }
+
+   body {
+       min-height: 100%;
+
+   }
+
+   .caixa-logo {
+       position: absolute;
+       top: -50px;
+       left: 50%;
+       transform: translateX(-50%);
+   }
+
+   .caixa-logo img {
+       height: 40vh;
+   }
+
+   .header {
+       position: absolute;
+       left: 50%;
+       display: flex;
+       transform: translateX(-50%);
+       gap: 50px;
+       align-items: center;
+       justify-content: center;
+       margin-top: 20vh;
+   }
+
+   .header a {
+       font-family: "Mont Serrat", sans-serif;
+       color: white;
+       cursor: pointer;
+       font-size: 3vh;
+       font-weight: 400;
+       font-style: normal;
+       text-decoration: none;
+   }
+
+   .header a:hover {
+       font-size: 26px;
+       transition: 0.5s ease-in-out;
+   }
+
+
+   .caixa-video {
+       position: fixed;
+       top: 0;
+       z-index: -1;
+       min-height: 100%;
+       min-width: 100%;
+       object-fit: cover;
+   }
+
+   .video-fundo {
+       min-height: 100%;
+       min-width: 100%;
+       object-fit: cover;
+   }
+
+   .mascara {
+       height: 100%;
+       width: 100%;
+       position: fixed;
+       background: #01020a;
+       background: radial-gradient(circle, rgba(1, 2, 10, 0.72) 76%, rgba(3, 0, 0, 1) 100%);
+       z-index: -1;
+   }
+
+   .link-wpp img {
+       position: fixed;
+       height: 120px;
+       right: 20px;
+       bottom: 20px;
+   }
+
+   .link-wpp img:hover {
+       height: 140px;
+       transition: 1s ease-in-out;
+   }
+
+   .caixa-titulo {
+       position: absolute;
+       left: 50%;
+       transform: translateX(-50%);
+       top: 40%;
+
+   }
+
+   .titulo2 {
+       color: white;
+       font-family: "Mont Serrat", sans-serif;
+       font-size: 30px;
+       font-weight: 200;
+       font-style: normal;
+       text-transform: uppercase;
+       text-align: center;
+   }
+
+   .negrito-h1 {
+       font-weight: bold;
+       color: rgba(238, 200, 124, 1);
+   }
+
+   .galeria-videos {
+       position: absolute;
+       margin-top: 400px;
+       left: 50%;
+       transform: translateX(-50%);
+       display: flex;
+       gap: 39px;
+       flex-wrap: wrap;
+       justify-content: space-between;
+   }
+
+   .video-container {
+       position: relative;
+       border: 5px solid white;
+       border-radius: 10px;
+       padding: 10px;
+       width: 250px;
+       box-sizing: border-box;
+   }
+
+   .video-container video {
+       width: 100%;
+       height: 100%;
+       border-radius: 5px;
+   }
+
+   .video-container:hover video {
+       opacity: 1;
+   }
+
+   .contato2 {
+       position: absolute;
+       bottom: 0;
+   }
+
+   .caixa-duvidas-finais {
+       display: flex;
+       flex-wrap: wrap;
+       position: absolute;
+       margin-top: 78%;
+       left: 50%;
+       transform: translateX(-50%);
+
+
+   }
+
+   .caixa-duvidas-finais h2 {
+       color: white;
+       font-size: 1, 5em;
+       text-align: center;
+       font-family: "Mont Serrat", sans-serif;
+       margin-bottom: 5%;
+   }

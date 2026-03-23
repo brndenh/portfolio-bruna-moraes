@@ -1,0 +1,134 @@
+   * {
+       padding: 0;
+       margin: 0;
+       box-sizing: border-box;
+       font-family: "Mont Serrat", sans-serif;
+   }
+
+   body {
+       min-height: 100%;
+
+   }
+
+   .caixa-logo {
+       position: absolute;
+       top: -50px;
+       left: 50%;
+       transform: translateX(-50%);
+   }
+
+   .caixa-logo img {
+       height: 40vh;
+   }
+
+   .header {
+       position: absolute;
+       left: 50%;
+       display: flex;
+       transform: translateX(-50%);
+       gap: 50px;
+       align-items: center;
+       justify-content: center;
+       margin-top: 20vh;
+   }
+
+   .header a {
+       font-family: "Mont Serrat", sans-serif;
+       color: white;
+       cursor: pointer;
+       font-size: 3vh;
+       font-weight: 400;
+       font-style: normal;
+       text-decoration: none;
+   }
+
+   .header a:hover {
+       font-size: 26px;
+       transition: 0.5s ease-in-out;
+   }
+
+
+   .caixa-video {
+       position: fixed;
+       top: 0;
+       z-index: -1;
+       min-height: 100%;
+       min-width: 100%;
+       object-fit: cover;
+   }
+
+   .video-fundo {
+       min-height: 100%;
+       min-width: 100%;
+       object-fit: cover;
+   }
+
+   .mascara {
+       height: 100%;
+       width: 100%;
+       position: fixed;
+       background: #01020a;
+       background: radial-gradient(circle, rgba(1, 2, 10, 0.72) 76%, rgba(3, 0, 0, 1) 100%);
+       z-index: -1;
+   }
+
+   .link-wpp img {
+       position: fixed;
+       height: 120px;
+       right: 20px;
+       bottom: 20px;
+   }
+
+   .link-wpp img:hover {
+       height: 140px;
+       transition: 1s ease-in-out;
+   }
+
+   .section-box {
+       display: flex;
+       flex-direction: column;
+       position: relative;
+       top: 200px;
+       max-width: 800px;
+       align-items: center;
+       margin-left: 50%;
+       transform: translateX(-50%);
+   }
+
+   h2 {
+       font-size: 40px;
+       color: white;
+       margin-bottom: 30px;
+       font-weight: 600;
+       margin-top: 5%;
+   }
+
+   p {
+       color: white;
+       font-size: 24px;
+       font-weight: 100;
+       text-align: center;
+       margin-bottom: 30px;
+
+   }
+
+   .divisor {
+       font-weight: lighter;
+       color: rgba(238, 200, 124, 1);
+   }
+
+   @media Screen and (max-width: 600px) {
+       .section-box {
+           align-items: center;
+           margin-left: 50%;
+           transform: translateX(-50%);
+       }
+          .caixa-video {
+            height: 100vh;
+          }
+          p {
+            max-height: 300px;
+          }
+
+
+   }

@@ -1,0 +1,296 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-width: 100%;
+    min-height: 100%;
+
+}
+
+.caixa-logo {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.caixa-logo img {
+    height: 40vh;
+}
+
+.header {
+    position: absolute;
+    left: 50%;
+    display: flex;
+    transform: translateX(-50%);
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vh;
+}
+
+.header a {
+    font-family: "Mont Serrat", sans-serif;
+    color: white;
+    cursor: pointer;
+    font-size: 3vh;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.header a:hover {
+    font-size: 26px;
+    transition: 0.5s ease-in-out;
+}
+
+
+
+.caixa-video {
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+}
+
+.video-fundo {
+    min-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+}
+
+.mascara {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background: #01020a;
+    background: radial-gradient(circle, rgba(1, 2, 10, 0.72) 76%, rgba(3, 0, 0, 1) 100%);
+    z-index: -1;
+}
+
+.link-wpp img {
+    position: fixed;
+    height: 120px;
+    right: 20px;
+    bottom: 20px;
+}
+
+.link-wpp img:hover {
+    height: 140px;
+    transition: 1s height ease-in-out;
+}
+
+.section-box {
+    display: inline-block;
+}
+
+.texto1 {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 80vh;
+    left: 25vh;
+    max-width: 700px;
+}
+
+.texto1 h1 {
+    font-family: "Mont Serrat", sans-serif;
+    font-size: 5rem;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 2s ease-out, transform 1s ease-out;
+}
+
+.texto1 h2 {
+    font-family: "Mont Serrat", sans-serif;
+    font-size: 35px;
+    margin-top: 5%;
+    text-align: center;
+    color: white;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 2s ease-out, transform 1s ease-out;
+}
+
+.texto1 p {
+    font-family: "Mont Serrat", sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 3%;
+    color: white;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 2s ease-out, transform 1s ease-out;
+}
+
+.duvidas {
+    position: relative;
+    left: 50%;
+    transform: translateX(-65%);
+    margin-top: 5%;
+}
+
+.texto1 h1.visible,
+.texto1 h2.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.texto1 p.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.foto-bruna img {
+    display: inline-block;
+    position: absolute;
+    width: 100vh;
+    top: 40vh;
+    right: 0;
+
+
+}
+
+.formulario-fale-conosco {
+    background-color: white;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    position: fixed;
+    top: 30%;
+    left: -300px;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+button {
+    color: white;
+    background: #070707;
+    background: linear-gradient(90deg, rgba(7, 7, 7, 1) 5%, rgba(7, 7, 7, 1) 19%, rgba(238, 200, 124, 1) 100%);
+    border-radius: 8px;
+    border: none;
+    width: 200px;
+    height: 50px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 30px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-family: "Mont Serrat", sans-serif;
+}
+
+input {
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding-left: 5px;
+    outline-color: black;
+}
+
+textarea {
+    width: 270px;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    padding-left: 5px;
+    outline-color: black;
+}
+
+.mascara-formulario {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #01020a;
+    background: radial-gradient(circle, rgba(1, 2, 10, 0.72) 0%, rgba(3, 0, 0, 1) 79%);
+}
+
+@media Screen and (max-width: 960px) {
+    .texto1 {
+        position: static;
+        margin: 400px 125px 125px 125px;
+    }
+
+    .texto1 h2 {
+        margin-top: 100px;
+    }
+
+    .texto1 p {
+        margin-bottom: 75px;
+    }
+
+}
+
+@media Screen and (max-width: 600px) {
+
+    .header a {
+        font-size: 2vh;
+    }
+
+    .texto1 {
+        position: static;
+        margin: 100px 50px 50px 50px;
+
+
+    }
+
+    .texto1 h1 {
+        font-size: 30px;
+    }
+
+    .texto1 p {
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+
+    .texto1 h2 {
+        font-size: 25px;
+        margin-top: 50px;
+    }
+
+    .caixa-video {
+        height: 100vh;
+    }
+
+    .header {
+        position: static;
+        width: auto;
+        margin-left: 50%;
+    }
+
+    .caixa-logo img {
+        width: 50vh;
+
+    }
+
+    .foto-bruna img {
+        display: none;
+    }
+
+    .link-wpp img {
+        right: 5px;
+        bottom: 5px;
+        height: 90px;
+    }
+
+    .mascara {
+        height: auto;
+    }
+
+    button {
+        width: 125px;
+        height: 35px;
+        font-size: 10px;
+    }
+
+}
