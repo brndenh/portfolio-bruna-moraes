@@ -10,26 +10,47 @@ body {
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .caixa-logo {
     position: absolute;
-    top: -50px;
+    top: -150px;
     left: 50%;
     transform: translateX(-50%);
+    max-width: 400px;
+    height: 125px;
 }
 
 .caixa-logo img {
-    height: 40vh;
+    max-width: 50vh;
+    height: auto;
+}
+
+.header-div {
+    position: absolute;
+    top: 20vh;
+    width: 100%;
+    align-items: center;
+    padding: 0 20px;
+
 }
 
 .header {
-    position: absolute;
-    left: 50%;
     display: flex;
-    transform: translateX(-50%);
     gap: 50px;
     align-items: center;
     justify-content: center;
-    margin-top: 20vh;
+
+}
+
+.header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 50px;
 }
 
 .header a {
@@ -38,13 +59,31 @@ body {
     cursor: pointer;
     font-size: 3vh;
     font-weight: 400;
-    font-style: normal;
     text-decoration: none;
 }
 
 .header a:hover {
     font-size: 26px;
     transition: 0.5s ease-in-out;
+}
+
+.home {
+    min-height: 100vh;
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.home .conteudo-home {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+
 }
 
 
@@ -85,7 +124,7 @@ body {
     transition: 1s height ease-in-out;
 }
 
-.section-box {
+.home {
     display: inline-block;
 }
 
@@ -95,7 +134,7 @@ body {
     justify-content: center;
     position: absolute;
     top: 80vh;
-    left: 5vh;
+    left: 15vh;
     max-width: 700px;
 }
 
@@ -104,8 +143,6 @@ body {
     font-size: 5rem;
     text-align: center;
     color: white;
-    opacity: 0;
-    transform: translateY(50px);
     transition: opacity 2s ease-out, transform 1s ease-out;
 }
 
@@ -115,8 +152,6 @@ body {
     margin-top: 5%;
     text-align: center;
     color: white;
-    opacity: 0;
-    transform: translateY(50px);
     transition: opacity 2s ease-out, transform 1s ease-out;
 }
 
@@ -126,8 +161,6 @@ body {
     text-align: center;
     margin-top: 3%;
     color: white;
-    opacity: 0;
-    transform: translateY(50px);
     transition: opacity 2s ease-out, transform 1s ease-out;
 }
 
@@ -138,25 +171,35 @@ body {
     margin-top: 5%;
 }
 
-.texto1 h1.visible,
-.texto1 h2.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.texto1 p.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
 .foto-bruna img {
     display: inline-block;
     position: absolute;
     width: 100vh;
     top: 40vh;
     right: 0;
+    border-radius: 300px;
 
 
+}
+
+.reveal-left,
+.reveal-right {
+  opacity: 0;
+  transition: all 1.2s ease;
+}
+
+.reveal-left {
+  transform: translateX(-40px);
+}
+
+.reveal-right {
+  transform: translateX(40px);
+}
+
+.reveal-left.visible,
+.reveal-right.visible {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .formulario-fale-conosco {
@@ -182,7 +225,6 @@ button {
     cursor: pointer;
     text-transform: uppercase;
     font-weight: bold;
-    margin-top: 15px;
     margin-left: 30px;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     font-family: "Mont Serrat", sans-serif;
@@ -214,6 +256,335 @@ textarea {
     background: #01020a;
     background: radial-gradient(circle, rgba(1, 2, 10, 0.72) 0%, rgba(3, 0, 0, 1) 79%);
 }
+
+/** Styles for section work **/
+.work {
+    padding: 100px 20px;
+    max-width: 1200px;
+    margin: 125vh auto 10vh auto;
+}
+
+.caixa-titulo {
+    position: static;
+    margin-bottom: 100px;
+    transform: none;
+    text-align: center;
+}
+
+.caixa-titulo h1 {
+    font-size: 40px;
+}
+
+.titulo2 {
+    color: white;
+    font-family: "Mont Serrat", sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.negrito-h1 {
+    font-weight: bold;
+    color: rgba(238, 200, 124, 1);
+}
+
+.player-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.video-player-box {
+  width: 1100px;
+  max-width: 95%;
+  height: 700px;
+  margin: 0 auto;
+  background: #000;
+  border-radius: 16px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.video-player-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 12px;
+  display: block;
+  background: #000;
+  transition: opacity 0.5s ease;
+  transform: 0.5s ease, filter 0.5s ease;
+}
+.video-player-box video.saindo {
+  opacity: 0;
+  transform: scale(0.96);
+  filter: blur(4px);
+}
+
+.video-player-box video.entrando {
+  opacity: 1;
+  transform: scale(1);
+  filter: blur(0);
+}
+
+.btn-player {
+  background: rgba(255,255,255,0.08);
+  border: none;
+  color: white;
+  font-size: 32px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-player:hover {
+  background: rgba(238, 200, 124, 1);
+  color: black;
+}
+
+.miniaturas {
+  margin: 30px auto 0;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+
+.thumb {
+  width: 95px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: 0.6;
+  border: 3px solid transparent;
+  transition: 0.3s;
+  background: #000;
+}
+
+.thumb:hover,
+.thumb.ativo {
+  opacity: 1;
+  border-color: rgba(238, 200, 124, 1);
+}
+
+
+
+
+
+/** Styles for section services **/
+
+.services {
+  padding: 100px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services-title-box {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.services-title {
+  font-family: "Mont Serrat", sans-serif;
+  font-size: 60px;
+  font-weight: 800;
+  color: rgba(238, 200, 124, 1);
+  margin-bottom: 15px;
+}
+
+.services-subtitle {
+  font-family: "Mont Serrat", sans-serif;
+  font-size: 20px;
+  color: white;
+  line-height: 1.6;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.services-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.services-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+}
+
+.service-card {
+  background: rgba(10, 10, 10, 0.92);
+  border: 2px solid rgba(238, 200, 124, 0.35);
+  border-radius: 24px;
+  padding: 30px 28px 35px;
+  box-shadow: 0 0 18px rgba(238, 200, 124, 0.08);
+  transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(238, 200, 124, 1);
+  box-shadow: 0 0 24px rgba(238, 200, 124, 0.18);
+}
+
+.service-card-image {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.service-card-image img {
+  max-width: 90px;
+  max-height: 90px;
+  object-fit: contain;
+  display: block;
+}
+
+.service-card-body h2 {
+  font-family: "Mont Serrat", sans-serif;
+  font-size: 28px;
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.service-card-body p {
+  font-family: "Mont Serrat", sans-serif;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.85);
+  line-height: 1.8;
+  text-align: center;
+  margin: 0;
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(45px);
+  transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-card {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+.reveal-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+                            /** footer **/
+
+.footer {
+  background: rgba(10, 10, 10, 0.95);
+  border-top: 1px solid rgba(238, 200, 124, 0.3);
+  padding: 60px 20px 20px;
+  margin-top: 120px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.footer-brand h2 {
+  font-family: "Mont Serrat", sans-serif;
+  font-size: 32px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.footer-brand h2 span {
+  color: rgba(238, 200, 124, 1);
+}
+
+.footer-profissoes {
+  font-family: "Mont Serrat", sans-serif;
+  color: white;
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.footer-cidade {
+  font-family: "Mont Serrat", sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 16px;
+}
+
+.footer-links,
+.footer-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links h3,
+.footer-contato h3 {
+  font-family: "Mont Serrat", sans-serif;
+  font-size: 22px;
+  color: rgba(238, 200, 124, 1);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.footer-links a,
+.footer-contato a {
+  font-family: "Mont Serrat", sans-serif;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease;
+  text-align: center;
+}
+
+.footer-links a:hover,
+.footer-contato a:hover {
+  color: rgba(238, 200, 124, 1);
+}
+
+.footer-contato p {
+  font-family: "Mont Serrat", sans-serif;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 16px;
+  line-height: 1.6;
+  max-width: 300px;
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  margin-top: 40px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-family: "Mont Serrat", sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+}
+
+                        /** Media Queries **/
 
 @media Screen and (max-width: 960px) {
     .texto1 {
