@@ -212,6 +212,8 @@ html {
   left: -300px;
   padding: 20px;
   border-radius: 5px;
+  z-index: 300;
+  transition: left 0.5s ease-in-out;
 }
 
 button {
@@ -245,11 +247,13 @@ textarea {
   border: 1px solid grey;
   padding-left: 5px;
   outline-color: black;
+  z-index: 299;
 }
 
 .mascara-formulario {
   visibility: hidden;
   position: fixed;
+  left: 0;
   top: 0;
   width: 100vw;
   height: 100vh;

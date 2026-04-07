@@ -1,14 +1,20 @@
-const form = document.querySelector(".formulario-fale-conosco")
-const mask = document.querySelector(".mascara-formulario")
-function ClickButton() {
-  form.style.left = "50%"
-  form.style.transform = "translateX(-50%)"
-  mask.style.visibility = "visible"
-}
-function ClickMask() {
-  form.style.left = "-300px"
-  mask.style.visibility = "hidden"
-}
+const form = document.querySelector(".formulario-fale-conosco");
+const mask = document.querySelector(".mascara-formulario");
+const btnAbrir = document.getElementById("open-form");
+
+// Abre o formulário
+btnAbrir.addEventListener("click", () => {
+    form.style.left = "50%";
+    form.style.transform = "translateX(-50%)";
+    mask.style.visibility = "visible";
+});
+
+// Fecha o formulário ao clicar na máscara
+mask.addEventListener("click", () => {
+    form.style.left = "-300px";
+    mask.style.visibility = "hidden";
+});
+
 window.addEventListener('scroll', function () {
   const h1 = document.querySelector('.texto1 h1');
   const h2 = document.querySelector('.texto1 h2');
