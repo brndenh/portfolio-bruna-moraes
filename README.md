@@ -11,7 +11,7 @@ O portfólio foi dividido em várias páginas, cada uma com uma função especí
 A página inicial apresenta uma introdução à Bruna Moraes, destacando sua experiência de mais de 4 anos em gestão de Instagram e criação de conteúdo digital.
 
 - **Imagens**:  
-    ![Imagem 1](https://raw.githubusercontent.com/brndenh/repository/main/ativos/1.png)
+    <img src="assets/1.png" width="100%" />
     - A primeira imagem mostra a apresentação da Bruna com uma breve descrição sobre seu trabalho.
 
 - **Características**:
@@ -23,7 +23,7 @@ A página inicial apresenta uma introdução à Bruna Moraes, destacando sua exp
 Esta página apresenta uma coleção dos trabalhos da Bruna, com vídeos destacados que exemplificam sua capacidade criativa como videomaker.
 
 - **Imagens**:  
-    ![Imagem 2](https://raw.githubusercontent.com/brndenh/repository/main/ativos/2.png)
+    <img src="assets/2.png" width="100%" />
     - Exemplo de vídeo que pode ser assistido diretamente da página.
 
 - **Características**:
@@ -35,7 +35,7 @@ Esta página apresenta uma coleção dos trabalhos da Bruna, com vídeos destaca
 Na página de serviços, são descritos os principais serviços oferecidos por Bruna, como videomaker e social media.
 
 - **Imagens**:  
-    ![Imagem 3](https://raw.githubusercontent.com/brndenh/repository/main/ativos/3.png)
+    <img src="assets/3.png" width="100%" />
     - Destaque para os serviços de criação de vídeos e gestão de redes sociais.
 
 - **Características**:
@@ -47,7 +47,7 @@ Na página de serviços, são descritos os principais serviços oferecidos por B
 O footer contém informações adicionais sobre o portfólio e formas de contato. Ele inclui links rápidos para navegação e dados de copyright.
 
 - **Imagens**:  
-    ![Imagem 4](https://raw.githubusercontent.com/brndenh/repository/main/ativos/4.png)
+    <img src="assets/4.png" width="100%" />
     - Exibe os detalhes sobre o rodapé do site com links de navegação e informações de contato.
 
 ---
@@ -56,10 +56,7 @@ O footer contém informações adicionais sobre o portfólio e formas de contato
 
 O portfólio foi desenvolvido utilizando as seguintes tecnologias:
 
-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_logo_and_wordmark.svg/2560px-HTML5_logo_and_wordmark.svg.png" width="30" />  
-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/1200px-CSS3_logo.svg.png" width="30" />  
-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/JavaScript_logo_%28black%29.svg/800px-JavaScript_logo_%28black%29.svg.png" width="30" />  
-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Octicons-mark-github.svg/2048px-Octicons-mark-github.svg.png" width="30" />
+- <img src="https://skillicons.dev/icons?i=html,css,js,git,github,vscode" />
 
 ---
 
@@ -67,4 +64,4 @@ O portfólio foi desenvolvido utilizando as seguintes tecnologias:
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/username/repository.git
+   git clone https://github.com/brndenh/portfolio-bruna-moraes.git
