@@ -2,14 +2,18 @@ const form = document.querySelector(".formulario-fale-conosco");
 const mask = document.querySelector(".mascara-formulario");
 const btnAbrir = document.getElementById("open-form");
 
-// Abre o formulário
+// Inicializa o formulário escondido
+form.style.left = "-1000px";
+mask.style.visibility = "hidden";
+
+// Abrir formulário apenas ao clicar no botão
 btnAbrir.addEventListener("click", () => {
     form.style.left = "50%";
     form.style.transform = "translateX(-50%)";
     mask.style.visibility = "visible";
 });
 
-// Fecha o formulário ao clicar na máscara
+// Fechar formulário ao clicar na máscara
 mask.addEventListener("click", () => {
     form.style.left = "-1000px";
     mask.style.visibility = "hidden";
