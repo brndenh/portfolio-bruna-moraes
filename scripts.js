@@ -15,6 +15,14 @@ mask.addEventListener("click", () => {
     mask.style.visibility = "hidden";
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const video = document.querySelector(".video-fundo");
+    video.play().catch(() => {
+        // Se o autoplay falhar, espera interação do usuário
+        document.addEventListener("click", () => video.play());
+    });
+});
+
 window.addEventListener('scroll', function () {
   const h1 = document.querySelector('.texto1 h1');
   const h2 = document.querySelector('.texto1 h2');
