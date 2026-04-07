@@ -11,7 +11,7 @@ btnAbrir.addEventListener("click", () => {
 
 // Fecha o formulário ao clicar na máscara
 mask.addEventListener("click", () => {
-    form.style.left = "-300px";
+    form.style.left = "-1000px";
     mask.style.visibility = "hidden";
 });
 
