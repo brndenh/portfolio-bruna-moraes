@@ -55,10 +55,8 @@ O footer contém informações adicionais sobre o portfólio e formas de contato
 ## Tecnologias Usadas
 
 O portfólio foi desenvolvido utilizando as seguintes tecnologias:
-<div style="text-align: center;">
-<img src="https://skillicons.dev/icons?i=html,css,js,git,github,vscode" />
-</div>
----
+<div style="text-align: center;"><img src="https://skillicons.dev/icons?i=html,css,js,git,github,vscode" /></div>
+
 
 ## Como Rodar o Projeto
 
