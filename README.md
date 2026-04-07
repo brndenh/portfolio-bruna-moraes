@@ -64,6 +64,4 @@ O portfólio foi desenvolvido utilizando as seguintes tecnologias:
    ```bash
    git clone https://github.com/brndenh/portfolio-bruna-moraes.git
 
-   Contribuições
-
 Sinta-se à vontade para contribuir com o projeto! Abra uma "pull request" se tiver sugestões de melhorias ou correções.
