@@ -11,7 +11,7 @@ O portfólio foi dividido em várias páginas, cada uma com uma função especí
 A página inicial apresenta uma introdução à Bruna Moraes, destacando sua experiência de mais de 4 anos em gestão de Instagram e criação de conteúdo digital.
 
 - **Imagens**:  
-    ![Imagem 1](https://raw.githubusercontent.com/username/repository/main/images/1.png)
+    ![Imagem 1](https://raw.githubusercontent.com/brndenh/repository/main/ativos/1.png)
     - A primeira imagem mostra a apresentação da Bruna com uma breve descrição sobre seu trabalho.
 
 - **Características**:
@@ -23,7 +23,7 @@ A página inicial apresenta uma introdução à Bruna Moraes, destacando sua exp
 Esta página apresenta uma coleção dos trabalhos da Bruna, com vídeos destacados que exemplificam sua capacidade criativa como videomaker.
 
 - **Imagens**:  
-    ![Imagem 2](https://raw.githubusercontent.com/username/repository/main/images/2.png)
+    ![Imagem 2](https://raw.githubusercontent.com/brndenh/repository/main/ativos/2.png)
     - Exemplo de vídeo que pode ser assistido diretamente da página.
 
 - **Características**:
@@ -35,7 +35,7 @@ Esta página apresenta uma coleção dos trabalhos da Bruna, com vídeos destaca
 Na página de serviços, são descritos os principais serviços oferecidos por Bruna, como videomaker e social media.
 
 - **Imagens**:  
-    ![Imagem 3](https://raw.githubusercontent.com/username/repository/main/images/3.png)
+    ![Imagem 3](https://raw.githubusercontent.com/brndenh/repository/main/ativos/3.png)
     - Destaque para os serviços de criação de vídeos e gestão de redes sociais.
 
 - **Características**:
@@ -47,7 +47,7 @@ Na página de serviços, são descritos os principais serviços oferecidos por B
 O footer contém informações adicionais sobre o portfólio e formas de contato. Ele inclui links rápidos para navegação e dados de copyright.
 
 - **Imagens**:  
-    ![Imagem 4](https://raw.githubusercontent.com/username/repository/main/images/4.png)
+    ![Imagem 4](https://raw.githubusercontent.com/brndenh/repository/main/ativos/4.png)
     - Exibe os detalhes sobre o rodapé do site com links de navegação e informações de contato.
 
 ---
