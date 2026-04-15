@@ -139,3 +139,9 @@ document.addEventListener("DOMContentLoaded", function () {
     observer.observe(elemento);
   });
 });
+
+if (window.matchMedia("(max-width: 768px)").matches) {
+  window.addEventListener('load', function() {
+    window.scrollTo(0, 0);
+  });
+}
